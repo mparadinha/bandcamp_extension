@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "bandcamp_extension",
+  "version": "0.1",
+
+  "description": "Extract download links for your bandcamp library.",
+
+  "content_scripts": [
+    {
+      "matches": ["https://bandcamp.com/*"],
+      "js": ["work_script.js"]
+    }
+  ]
+}
+
