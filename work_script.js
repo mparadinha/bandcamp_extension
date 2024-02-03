@@ -70,7 +70,7 @@ fetch_btn.onclick = async function (event) {
     copy_btn.setAttribute("id", "copy_btn");
     copy_btn.innerText = "Copy collection info as JSON to clipboard";
     copy_btn.onclick = function () {
-        navigator.clipboard.writeText(JSON.stringify({"collection": info}));
+        navigator.clipboard.writeText(JSON.stringify({"collection": info}, null, 2));
     };
     grid.appendChild(copy_btn);
 };
