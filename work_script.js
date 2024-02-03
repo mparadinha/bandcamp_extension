@@ -44,7 +44,7 @@ async function load_all_collection_items() {
             .textContent);
     };
     while (get_collection_items().length < get_collection_size()) {
-        document.querySelector("button[class=show-more]").click();
+        document.querySelector("div.expand-container button.show-more").click();
         await sleep(200);
         fetch_btn.scrollIntoView(); // the items don't get loaded until we scroll down
     }
